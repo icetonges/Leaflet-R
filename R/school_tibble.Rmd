@@ -148,7 +148,8 @@ school_name <- students$school_name %>%
 school_name
 ```
 ```{r}
-data2 %>% 
+perschool_summary <- data2 %>% 
   group_by(school_name,budget,size) %>% 
   summarize(avg.reading=mean(reading_score), avg.math=mean(math_score))
+perschool_summary
 ```
